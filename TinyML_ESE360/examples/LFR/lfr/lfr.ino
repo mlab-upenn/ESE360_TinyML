@@ -61,7 +61,7 @@ digitalWrite(LEDB,HIGH);
 
 //LFR logic
 
-if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 1)){
+if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 0)){
     forward();
 } //if right and left sensors are white we call the forward function
 
@@ -73,7 +73,7 @@ if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 1)){
   turnRight();
 }  //if Right Sensor is White and Left Sensor is Black then it will call turn Left function
 
-if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 0)){
+if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 1)){
   Stop();
 } //if Right Sensor and Left Sensor are at Black color then it will call Stop function
 
