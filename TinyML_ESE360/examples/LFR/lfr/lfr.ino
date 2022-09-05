@@ -57,7 +57,9 @@ void loop(){
   //LFR logic
   
   if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 0)){
-      forward();
+     slowed();
+      //delay(1000);
+     //forward();
   } //if right and left sensors are white we call the forward function
   
   if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 0)){
@@ -69,8 +71,6 @@ void loop(){
   }  //if Right Sensor is White and Left Sensor is Black then it will call turn Left function
   
   if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 1)){
-    slowed();
-    delay(1000);
     Stop();
   } //if Right Sensor and Left Sensor are at Black color then it will call Stop function
 
@@ -91,9 +91,8 @@ void forward(){  //forward
 }
 void slowed(){  //slowed
   green_on();
-  yellow_on();
   if(!drive){return;}
-  speedControl(128);//full speed
+  speedControl(188);//slow speed
   digitalWrite(in1, HIGH); //left motor forward
   digitalWrite(in2, LOW);  //left motor forward 
   digitalWrite(in3, LOW);  //right motor forward
