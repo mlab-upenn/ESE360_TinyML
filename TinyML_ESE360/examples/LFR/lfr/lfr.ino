@@ -50,8 +50,7 @@ void setup(){
 }
 
 void loop(){  
-  lights_off();
-  
+  lights_off();  
   // in 1 and in2 are a pair
   // in 3 and in4 are a pair
   
@@ -70,14 +69,31 @@ void loop(){
   }  //if Right Sensor is White and Left Sensor is Black then it will call turn Left function
   
   if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 1)){
+    slowed();
+    delay(1000);
     Stop();
   } //if Right Sensor and Left Sensor are at Black color then it will call Stop function
 
 }
-
+//speed control using PWM
+void speedControl(int speed){
+  analogWrite(enA,speed);
+  analogWrite(enB,speed);
+}
 void forward(){  //forward
   green_on();
   if(!drive){return;}
+  speedControl(245);//full speed
+  digitalWrite(in1, HIGH); //left motor forward
+  digitalWrite(in2, LOW);  //left motor forward 
+  digitalWrite(in3, LOW);  //right motor forward
+  digitalWrite(in4, HIGH); //right motor forward
+}
+void slowed(){  //slowed
+  green_on();
+  yellow_on();
+  if(!drive){return;}
+  speedControl(128);//full speed
   digitalWrite(in1, HIGH); //left motor forward
   digitalWrite(in2, LOW);  //left motor forward 
   digitalWrite(in3, LOW);  //right motor forward
