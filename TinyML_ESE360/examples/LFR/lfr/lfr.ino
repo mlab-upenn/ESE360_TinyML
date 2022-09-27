@@ -57,9 +57,9 @@ void loop(){
   //LFR logic
   
   if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 0)){
-     slowed();
+     //slowed();
       //delay(1000);
-     //forward();
+     forward();
   } //if right and left sensors are white we call the forward function
   
   if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 0)){
