@@ -6,7 +6,7 @@ This is a stripped down version of the [**Open Speech Recording**](https://githu
 
 1. Clone the repository, initialize the submodules, and install the only requirement, flask:
   ```
-  git clone https://github.com/tinyMLx/open-speech-recording.git
+  git clone https://github.com/mlab-upenn/ESE360_TinyML.git
   cd open-speech-recording
   git submodule update --init --recursive
   pip install flask
@@ -43,4 +43,4 @@ Note: if you want to change the words or counts make sure to kill and re-start t
   zip -r my_dataset.zip *
   ```
 
--Adapted by the Harvard CS249r F2020 team
+-Adapted by the ESE3600 TinyML F2022 team
