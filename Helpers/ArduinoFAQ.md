@@ -82,7 +82,7 @@ We have tested the TinyML kit on the following:
 + TensorFlow Lite for Microcontrollers Arudino library version 2.4.0-ALPHA
 + Arduino_LSM9DS1 Arudino library version 1.1.0
 + ArduinoBLE version Arduino library 1.1.3
-+ Havrard_TinyMLx Arudino library version 0.1.0
++ TinyML_ESE3600 Arudino library version 0.1.0
 
 ### I'm getting the error ```fatal error: XXXX.h: No such file or directory```
 
