@@ -54,24 +54,6 @@ void loop(){
   lights_off();  
   // in 1 and in2 are a pair
   // in 3 and in4 are a pair
+  main_lfr();
   
-  //LFR logic
-  
-  if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 0)){
-     //slowed();
-      //delay(1000);
-     forward();
-  } //if right and left sensors are white we call the forward function
-  
-  if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 0)){
-    turnRight();
-  } //if Right Sensor is Black and Left Sensor is White then it will call turn Right function  
-  
-  if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 1)){
-    turnLeft();
-  }  //if Right Sensor is White and Left Sensor is Black then it will call turn Left function
-  
-  if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 1)){
-    Stop();
-  } //if Right Sensor and Left Sensor are at Black color then it will call Stop function
 }

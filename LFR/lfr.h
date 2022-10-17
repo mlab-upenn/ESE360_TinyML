@@ -17,7 +17,7 @@
 #define LEDG 23
 
 // bool drive;
-
+void main_lfr();
 void speedControl();
 void forward();
 void slowed();
