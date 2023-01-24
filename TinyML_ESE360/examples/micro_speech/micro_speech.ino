@@ -75,7 +75,7 @@ void setup() {
   //
   // tflite::AllOpsResolver resolver;
   // NOLINTNEXTLINE(runtime-global-variables)
-  static tflite::MicroMutableOpResolver<4> micro_op_resolver(error_reporter);
+  static tflite::MicroMutableOpResolver<5> micro_op_resolver(error_reporter);
   if (micro_op_resolver.AddDepthwiseConv2D() != kTfLiteOk) {
     return;
   }
@@ -86,6 +86,9 @@ void setup() {
     return;
   }
   if (micro_op_resolver.AddReshape() != kTfLiteOk) {
+    return;
+  }
+    if (micro_op_resolver.AddConv2D() != kTfLiteOk) {
     return;
   }
 
