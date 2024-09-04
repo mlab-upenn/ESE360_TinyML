@@ -8,4 +8,4 @@ services:
       - "4000:4000"
     volumes:
       - ./:/site
-    command: "install && bundle exec jekyll serve --watch --force_polling --incremental --host 0.0.0.0 --port 4000"
+    command: ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--port", "4000", "--livereload", "--incremental", "--force_polling"]

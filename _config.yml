@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ESE 3600: Tiny ML
+title: "ESE 3600: Tiny ML"
 tagline: Where Embedded Systems and Machine Learning Meet
 description: A course exploring the intersection of embedded systems and machine learning.
 author: Nandan Tumu
-baseurl: '/' # the subpath of your site, e.g. /blog
+baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://tinyml.seas.upenn.edu' # the base hostname & protocol for your site, e.g. http://example.com
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "Dockerfile", "docker-compose.yml"]
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.9.0
@@ -27,18 +27,18 @@ color_scheme: light
 search_enabled: true
 heading_anchors: true
 permalink: pretty
-aux_links:
-  Kevin Lin:
-    - 'https://kevinl.info'
-  Just the Class on GitHub:
-    - 'https://github.com/kevinlin1/just-the-class'
-footer_content:
+# aux_links:
+#   Kevin Lin:
+#     - 'https://kevinl.info'
+#   Just the Class on GitHub:
+#     - 'https://github.com/kevinlin1/just-the-class'
+footer_content: "This course is taught at the University of Pennsylvania."
 
 # Collections for website data
 collections:
   staffers:
   modules:
-  schedules:
+  # schedules:
   announcements:
 # Default layouts for each collection type
 defaults:
@@ -55,11 +55,11 @@ defaults:
       type: modules
     values:
       layout: module
-  - scope:
-      path: ''
-      type: schedules
-    values:
-      layout: schedule
+  # - scope:
+  #     path: ''
+  #     type: schedules
+  #   values:
+  #     layout: schedule
   - scope:
       path: ''
       type: announcements

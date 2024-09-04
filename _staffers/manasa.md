@@ -3,6 +3,6 @@ name: Manasa Sathyan
 role: Former Staff
 email: --
 website: https://www.linkedin.com/in/manasasathyan/
-photo: manasa.jpg
+photo: manasa.png
 ---
 

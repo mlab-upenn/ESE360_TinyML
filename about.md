@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+published: false
 description: >-
     Course policies and information.
 ---
