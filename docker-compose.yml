@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    image: jekyll-image
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/site
+    command: "install && bundle exec jekyll serve --watch --force_polling --incremental --host 0.0.0.0 --port 4000"
