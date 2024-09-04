@@ -1,0 +1,100 @@
+{"0": {
+    "doc": "Just the Class",
+    "title": "ESE 3600: Tiny ML",
+    "content": ". Embedded Machine Learning is a cutting-edge field that brings the transformative power of machine learning (ML) to the performance-constrained and power-constrained domain of embedded systems to develop useful and exciting Internet of Things solutions. This is an introductory course at the intersection of Machine Learning (ML) and Embedded Internet of Things (IoT) Devices which covers machine learning applications and algorithms using embedded hardware, sensors, actuators and software. Embedding machine learning in a device at the extreme end point - right at the data source - is fundamentally different from general data-center style machine learning. Embedded ML is all about real-time processing of time-series data that comes directly from sensors. By the end of this course, students will collect and preprocess data to build a dataset, design a model, train a model, evaluate and optimize the pipeline, convert the model to run on hardware, deploy the model on a microcontroller, make inference and roll out applications. This will enable future applications development across medical devices, home appliances, industrial automation, wild-life conservation, smart agriculture and many more. Prerequisites: Basic knowledge of programming (CIS110 or equivalent) and basic knowledge of Python and basic knowledge of electronics and circuits. We provide the background, tools and assignments for machine learning and embedded systems using TensorFlow, Google Colab, and ARM Cortex32 hardware platforms. ",
+    "url": "/#ese-3600-tiny-ml",
+    
+    "relUrl": "/#ese-3600-tiny-ml"
+  },"1": {
+    "doc": "Just the Class",
+    "title": "Resources",
+    "content": ". | Syllabus | TensorFlow Lite, now LiteRT | Arduino | . ",
+    "url": "/#resources",
+    
+    "relUrl": "/#resources"
+  },"2": {
+    "doc": "Just the Class",
+    "title": "Project Examples",
+    "content": "Fall 22 . | Arnav Ghatiwala . | KWS Action on Robot | Trajectory Detection on Robot | . | Dhruv Agarwal . | Pedestrian Light Detection | . | Josh Ludan . | Dungeons and Dragons Dice Reader | . | . ",
+    "url": "/#project-examples",
+    
+    "relUrl": "/#project-examples"
+  },"3": {
+    "doc": "Just the Class",
+    "title": "Just the Class",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"4": {
+    "doc": "Announcements",
+    "title": "Announcements",
+    "content": "Announcements are stored in the _announcements directory and rendered according to the layout file, _layouts/announcement.html. ",
+    "url": "/announcements/",
+    
+    "relUrl": "/announcements/"
+  },"5": {
+    "doc": "Announcements",
+    "title": "Week 1 Announcement",
+    "content": "Apr 8 &middot; 0 min read . | Create a new repository based on Just the Class. | Configure a publishing source for GitHub Pages. Your course website is now live! | Update _config.yml with your course information. | Edit and create .md Markdown files to add your content. | . ",
+    "url": "/announcements/",
+    
+    "relUrl": "/announcements/"
+  },"6": {
+    "doc": "Announcements",
+    "title": "Week 0 Announcement",
+    "content": "Apr 1 &middot; 0 min read Hello world! . ",
+    "url": "/announcements/",
+    
+    "relUrl": "/announcements/"
+  },"7": {
+    "doc": "Calendar",
+    "title": "Calendar",
+    "content": "<!-- ",
+    "url": "/calendar/",
+    
+    "relUrl": "/calendar/"
+  },"8": {
+    "doc": "Calendar",
+    "title": "Introduction to Java",
+    "content": "Sep 28 Java &amp; Git 1.1 Sep 29 SectionIntro to Java Solution Sep 30 Variables &amp; Objects 1.2, 2.1 Oct 1 Lab Intro to Java Oct 2 Tracing, IntLists, &amp; Recursion 2.1 HW 1 due ",
+    "url": "/calendar/#introduction-to-java",
+    
+    "relUrl": "/calendar/#introduction-to-java"
+  },"9": {
+    "doc": "Calendar",
+    "title": "Basic Data Structures",
+    "content": "Oct 5 Linked Lists &amp; Encapsulation 3.1, 2.2, 2.3 Oct 6 SectionLinked Lists Solution Oct 7 Resizing Arrays 2.4, 2.5 Oct 8 Lab Resizing Arrays Oct 9 Runtime Analysis 8.1, 8.2, 8.3, 8.4 HW 2 due --> ",
+    "url": "/calendar/#basic-data-structures",
+    
+    "relUrl": "/calendar/#basic-data-structures"
+  },"10": {
+    "doc": "Staff",
+    "title": "Staff",
+    "content": " ",
+    "url": "/staff/",
+    
+    "relUrl": "/staff/"
+  },"11": {
+    "doc": "Staff",
+    "title": "Instructors",
+    "content": "Rahul Mangharam . rahulm@seas.upenn.edu . Office Hours See Canvas . ",
+    "url": "/staff/#instructors",
+    
+    "relUrl": "/staff/#instructors"
+  },"12": {
+    "doc": "Staff",
+    "title": "Teaching Assistants",
+    "content": "Nandan Tumu . nandant@upenn.edu . Office Hours See Canvas . ",
+    "url": "/staff/#teaching-assistants",
+    
+    "relUrl": "/staff/#teaching-assistants"
+  },"13": {
+    "doc": "Staff",
+    "title": "Former Staff",
+    "content": "Manasa Sathyan . -- . Tejas Agarwal . -- . ",
+    "url": "/staff/#former-staff",
+    
+    "relUrl": "/staff/#former-staff"
+  }
+}

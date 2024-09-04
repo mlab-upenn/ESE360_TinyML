@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiny Machine Learning</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="imgs/penn.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>Course Overview</p>
+  </a>
+  <a href="#workflow" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Workflow & Grading</p>
+  </a>
+  <a href="#schedule" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-tasks w3-xxlarge"></i>
+    <p>Schedule</p>
+  </a>
+
+    <a href="#resources" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-search w3-xxlarge"></i>
+    <p>Resources</p>
+    </a>
+      <a href="#staff" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Staff</p>
+  </a>
+    <a href="#blog" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Blog</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">COURSE OVERVIEW</a>
+    <a href="#workflow" class="w3-bar-item w3-button" style="width:25% !important">WORKFLOW & GRADING</a>
+    <a href="#schedule" class="w3-bar-item w3-button" style="width:25% !important">SCHEDULE</a>
+    <a href="#resources" class="w3-bar-item w3-button" style="width:25% !important">RESOURCES</a>
+    <a href="#staff" class="w3-bar-item w3-button" style="width:25% !important">STAFF</a>
+    <a href="#blog" class="w3-bar-item w3-button" style="width:25% !important">BLOG</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> ESE3600: Tiny Machine Learning.</h1>
+    <img src="imgs/ESE3600 Welcome to TinyML.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+    <h2 class="w3-text-light-black">Course Overview</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Embedded Machine Learning is a cutting-edge field that brings the transformative power of machine learning (ML) to the performance-constrained and power-constrained domain of embedded systems to develop useful and exciting Internet of Things solutions. This is an introductory course at the intersection of Machine Learning (ML) and Embedded Internet of Things (IoT) Devices which covers machine learning applications and algorithms using embedded hardware, sensors, actuators and software. Embedding machine learning in a device at the extreme end point - right at the data source - is fundamentally different from general data-center style machine learning. Embedded ML is all about real-time processing of time-series data that comes directly from sensors. By the end of this course, students will collect and preprocess data to build a dataset, design a model, train a model, evaluate and optimize the pipeline, convert the model to run on hardware, deploy the model on a microcontroller, make inference and roll out applications. This will enable future applications development across medical devices, home appliances, industrial automation, wild-life conservation, smart agriculture and many more. Prerequisites: Basic knowledge of programming (CIS110 or equivalent) and basic knowledge of Python and basic knowledge of electronics and circuits. We provide the background, tools and assignments for machine learning and embedded systems using TensorFlow, Google Colab, and ARM Cortex32 hardware platforms.   </p>
+    
+  </div>
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="workflow">
+    <h3 class="w3-padding-16 w3-text-light-black">Workflow & Grading</h3>
+    <img src="imgs/whatall.png" alt="boy" class="w3-image" width="992" height="1108">
+    <br><br>
+    <!-- <p class="w3-wide"><b>5% Class Participation - active in class and piazza, complete tutorials in class </b></p>
+    <div class="w3-white">
+     <div class= "w3-dark-black" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide"><b>
+30% Labs                 - programming assignments</b></p>
+    <div class="w3-white">
+      <div class="w3-dark-black" style="height:28px;width:85%"></div>
+    </div>
+        <p class="w3-wide"><b>
+25% Tutorials             - in-class training</b></p>
+    <div class="w3-white">
+      <div class="w3-dark-black" style="height:28px;width:85%"></div>
+    </div>
+        <p class="w3-wide"><b>
+25% Quizzes             - 30 mins every 2-3 weeks</b></p>
+    <div class="w3-white">
+      <div class="w3-dark-black" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide"><b>
+15% Final Project         - hands-on with embedded hardware<b></p>
+    <div class="w3-white">
+      <div class="w3-dark-black" style="height:28px;width:80%"></div>
+    </div><br> -->
+    <img src="imgs/Grading.png" alt="boy" class="w3-center" width="562" height="625">
+    </div>
+    
+    <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-black">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+  <div class="w3-padding-64 w3-content w3-text-black" id="staff">
+    <h2 class="w3-text-light-black">Staff</h2>+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+    <!-- <button class="w3-button w3-light-black w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button> -->
+    
+    <!-- Schedule -->
+    <div class="w3-padding-64 w3-content w3-text-black" id="schedule">
+    <h3 class="w3-padding-16 w3-text-light-black"><b>Schedule</b></h3>
+
+    <iframe width=1100 height=1600 src="https://docs.google.com/spreadsheets/d/1CYeezxdx-KQyYiHCuJ9jJ3YDr8maykmwWH_Y0k_e4Lw/edit?usp=sharing"></iframe>
+    </div>
+
+
+
+    <div class="w3-padding-64 w3-content w3-text-black" id="resources">
+    <!-- Resources -->
+      <h3 class="w3-padding-24 w3-text-light-black"><b>Resources</b></h3>  
+            <a href="https://docs.google.com/document/d/1JFby6rC18-HvJ68IxXYFiRJP9viuZWtvutVjcwHCPRc/edit?usp=sharing">ESE3600 Syllabus</a> 
+      <br><br>
+    <img src="imgs/arduino.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Arduino</span> <a href="https://www.arduino.cc/">Wesbite</a></p><br>
+    <br><br>
+    <img src="imgs/tflite.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Tensorflow Lite</span><a href="https://www.tensorflow.org/lite">Wesbite</a></p>
+      <br><br>
+     <a href="magic_wand_capture.html">Pete Warden's Magic Wand Capture tool</a> 
+      <br><br>
+      <a href="open_speech_recording.html"> Pete Warden's Open Speech Recording plugin </a>
+      <br><br>
+      <h3> <b>Some example project videos</b> </h3>
+      <br>
+      <h4>Arnav Ghatiwala - ESE3600 F22</h4>
+      <a href="https://www.youtube.com/watch?v=J0Iifhga7lg">TinyML - KWS action on robot</a>
+      <a href="https://www.youtube.com/embed/watch?v=-Rn3QVjB8PA">TinyML - Trajectory detection on robot</a>
+      <br>
+      <h4>Dhruv Agarwal - ESE3600 F22</h4>
+      <a href="https://www.youtube.com/embed/watch?v=e5NfGWAu06Q">Pedestrian light detection TinyML app</a>
+      <br>
+      <h4>Josh Ludan - ESE3600 F22</h4>
+      <a href="https://www.youtube.com/embed/watch?v=c7OoO8QS2fg&t=1s">TinyML dungeon and dragons dice reader</a>
+      </iframe> 
+      <!-- End Resources Section -->
+  </div>
+  
+
+  <!-- Staff Section -->
+  <div class="w3-padding-64 w3-content w3-text-black" id="staff">
+    <h2 class="w3-text-light-black">Staff</h2>Instructor</b></p>
+    <img src="imgs/rahul.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Professor Rahul Mangharam [rahulm@seas.upenn.edu]</p>
+    <div class="w3-white">
+      <div class="w3-dark-black" style="height:28px;width:95%"></div>
+    </div> <br><br><br>
+      <p lass="w3-text-light-black""><b> Teaching Assistants</b></p>
+<!--       <img src="imgs/manasa.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Nandan Tumu [nandant@seas.upenn.edu] </p> <br><br><br>
+      
+    </div><br>
+   
+
+
+    <!-- Blog Section -->
+  <div class="w3-padding-64 w3-content w3-text-black" id="blog">
+    <h2 class="w3-text-light-black">Blog</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <ul><li>Github repository is set to Public - Click on icon below.</li></ul></p>
+    </div><br>
+  <!-- Blog Section -->
+  </div>
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
+  <a href= "https://github.com/mlab-upenn/ESE360_TinyML"<i class="fa fa-github w3-hover-opacity"></i></a>
+
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
