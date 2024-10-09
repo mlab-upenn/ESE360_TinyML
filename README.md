@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Just the Class
+title: TinyML
 nav_exclude: true
 permalink: /:path/
 seo:
   type: Course
-  name: Just the Class
+  name: ESE 3600: TinyML
 ---
 
 # ESE 3600: Tiny ML
